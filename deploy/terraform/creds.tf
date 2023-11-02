@@ -5,9 +5,10 @@ resource "random_string" "password" {
 }
 
 resource "random_string" "username" {
-  length  = 32
+  length  = 16
   special = false
   upper   = true
+  numeric = false
 }
 
 output "db_password" {
